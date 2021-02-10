@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1 class="header">Tim's page</h1>
+        <ul class="list"></ul>
+        <button>randomize</buttoN>
+    </body>
+</html>
+<style>
+    h1 {
+        background-color: blue;
+        color: red;
+    }
+
+    ul {
+        font-size: 24px;
+    }
+
+    button {
+        background-color: orange;
+        color: white;
+    }
+</style>
+<script>
+    const courseFacilitators = ['tim', 'kaushal', 'ryan']
+    const list = document.querySelector('.list')
+
+    courseFacilitators.map((facilitator) => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = facilitator;
+        list.append(listItem);
+    })
+</script>
